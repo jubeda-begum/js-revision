@@ -15,7 +15,7 @@ function createCountdown(seconds, onTick, onComplete) {
     }
   }
 
-  tick(); // start countdown
+  tick(); 
 
   return {
     pause() {
@@ -36,12 +36,11 @@ const timer = createCountdown(
   () => console.log("Countdown Complete!")
 );
 
-// Pause after 2 seconds
 setTimeout(() => {
   timer.pause();
   console.log("Paused");
 
-  // Resume after 2 more seconds
+
   setTimeout(() => {
     console.log("Resumed");
     timer.resume();
